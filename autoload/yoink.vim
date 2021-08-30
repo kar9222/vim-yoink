@@ -435,7 +435,8 @@ function! yoink#rotateThenPrint(offset)
 endfunction
 
 function! yoink#onVimEnter()
-    call yoink#addCurrentDefaultRegToHistory()
+    " CUSTOM See comment at arch_wsl_3. When done, use svermeulen/vim-yoink
+    " call yoink#addCurrentDefaultRegToHistory()
 
     if get(g:, 'yoinkSyncSystemClipboardOnFocus', 1)
         augroup _YoinkSystemSync
